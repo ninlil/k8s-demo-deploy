@@ -1,0 +1,15 @@
+@url=http://localhost:8080
+###
+GET {{url}}/
+###
+GET {{url}}/live
+###
+GET {{url}}/live?status=200
+###
+GET {{url}}/live?status=400
+###
+GET {{url}}/ready
+###
+GET {{url}}/ready?status=200
+###
+GET {{url}}/ready?status=400
