@@ -13,3 +13,6 @@ clean:
 
 size:
 	ls -la bin/demo_*
+
+docker:
+	docker build -t demo:latest .
