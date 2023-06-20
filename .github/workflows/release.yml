@@ -15,7 +15,9 @@ jobs:
       uses: actions/checkout@v3
     
     - name: Save version
-      run: basename $GITHUB_REF >version.txt
+      run: |
+        echo $GITHUB_REF_NAME >version.txt
+        cat version.txt
 
     - name: Docker meta
       id: meta
